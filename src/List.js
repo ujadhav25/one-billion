@@ -8,7 +8,7 @@ const List = (props) => (
             {
                 props.data.map(item => {
                     const links = item.wikipedia.map(wiki => (
-                        <div><a target="_blank" href={wiki.wikipedia} >{wiki.title}</a> | </div>
+                        <div><a href={wiki.wikipedia} >{wiki.title}</a> | </div>
                     ));
                     return (
                         <li>
